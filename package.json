@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "/home/kevindev/workspace/ecmascript/src/index.js"
+
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,13 @@
     "url": "https://github.com/kevinduhamelhayes/ecmascript/issues"
   },
   "homepage": "https://github.com/kevinduhamelhayes/ecmascript#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "json-server": "^0.17.3"
+  }
 }
