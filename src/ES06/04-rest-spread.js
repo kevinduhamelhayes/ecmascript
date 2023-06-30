@@ -3,7 +3,7 @@
 //Desestructuración de objetos
 //La desestructuración de objetos implica extraer las propiedades de un objeto en variables. Mediante el mismo nombre de la propiedad del objeto con la siguiente sintaxis:
 
-const objeto = { 
+const objeto1 = { 
     prop1: "valor1",
     prop2: "valor2",
     ... 
@@ -34,7 +34,7 @@ console.log(plataforma)  // 'Platzi'
 //Cambiar el nombre de las variables con desestructuración
 //Si no te agrada el nombre de la propiedad del objeto, puedes cambiarlo utilizando la siguiente sintaxis:
 
-const objeto = { prop1: "valor1", prop2: "valor2", ... } 
+const objeto2 = { prop1: "valor1", prop2: "valor2", ... } 
 
 // Desestructuración
 const { prop1: newProp1, prop2: newProp2 } = objeto
@@ -62,7 +62,7 @@ mostrarDatos(usuario) // 'Andres', 23, 'Platzi'
 //Desestructuración de arrays
 //La desestructuración de arrays consiste en extraer los valores de un array en variables, utilizando la misma posición del array con una sintaxis similar a la desestructuración de objetos.
 
-const array = [ 1, 2, 3, 4, 5 ]
+//const array = [ 1, 2, 3, 4, 5 ]
 
 // Desestructuración
 const [uno, dos, tres ] = array
@@ -81,24 +81,24 @@ function useState(value){
 
 //Sin desestructuración 
 const estado = useState(3)
-const valor = estado[0]
-const actualizador = estado[1]
+const valor2 = estado[0]
+const actualizador1 = estado[1]
 
 //Con desestructuración 
 const [valor, actualizador] = useState(3)
 //Lo que puedes hacer con desestructuración, pero no es recomendable
 //Si necesitas un elemento en cierta posición, puedes utilizar la separación por comas para identificar la variable que necesitas.
 
-const array = [ 1, 2, 3, 4, 5 ]
+const array3 = [ 1, 2, 3, 4, 5 ]
 
 const [ ,,,,  cinco ] = array
 
 console.log(cinco) // 5
 //Como los arrays son un tipo de objeto, puedes utilizar la desestructuración de objetos mediante el índice y utilizando un nombre para la variable.
 
-const array = [ 1, 2, 3, 4, 5 ]
+const array4 = [ 1, 2, 3, 4, 5 ]
 
-const {4: cinco} = array
+const {4: cinco1} = array
 
 console.log(cinco) // 5
 //El operador de propagación (spread operator), como su nombre lo dice,
@@ -106,12 +106,12 @@ console.log(cinco) // 5
 // tres puntos (...) dentro de un array.
 // DESEMPAQUETADOR
 // Para strings
-const array = [ ..."Hola"]    // [ 'H', 'o', 'l', 'a' ]
+const array5 = [ ..."Hola"]    // [ 'H', 'o', 'l', 'a' ]
 
 // En arrays
-const otherArray = [ ...array]   //[ 'H', 'o', 'l', 'a' ]
+const otherArray2 = [ ...array]   //[ 'H', 'o', 'l', 'a' ]
 //También se utiliza para objetos, pero esta característica fue añadida en versiones posteriores de ECMAScript y es denominada propiedades de propagación.
-const originalArray = [1,2,3,4,5]
+const originalArray3 = [1,2,3,4,5]
 const copyArray = originalArray
 copyArray[0] = 0
 
@@ -152,7 +152,7 @@ const objeto = {
     age: 23,
     plataforma: "Platzi"
   }
-  const array = [0,1,2,3,4,5]
+  const array6 = [0,1,2,3,4,5]
   
   const {plataforma, ...usuario} = objeto
   cons [cero, ...positivos] = array
