@@ -10,7 +10,7 @@ const add  = (x,y) => {
     return x + y;
 }
 
-export default add
+export default add;
 
 //Las siguientes importaciones son válidas
 import  add  from './math_functions.js'
